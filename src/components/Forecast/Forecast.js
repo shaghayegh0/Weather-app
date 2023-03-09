@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Conditions from '../Conditions/Conditions';
 import classes from './Forecast.module.css';
 
-// 142dc61d9e5a430b96045028230803
 const Forecast = () => {
 	
     let [latitude, setLatitude] = useState(49.3);
@@ -16,7 +15,6 @@ const Forecast = () => {
       		const options = {
 			method: 'GET',
 		};
-        // fetch('https://api.open-meteo.com/v1/forecast?latitude=0.0&longitude=0.0&hourly=rain&daily=temperature_2m_max,temperature_2m_min&current_weather=true&timezone=GMT', options)
 
 	fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=rain&timezone=GMT&daily=precipitation_probability_max&current_weather=true`, options)
        .then(response => response.json())
@@ -29,11 +27,11 @@ const Forecast = () => {
        
        <div>
            <h2>Find Current Weather Conditions</h2>
+           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 
 
-
-
+           
            
             <form onSubmit={getForecast}>
                 <label for='latitude'>Latitude:    </label>

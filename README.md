@@ -8,6 +8,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - HTML
   - CSS
 
+#Installation:
+  - npm start
+  - npm run build
+   (check to have node.js)
 # Goal: 
   - To generate a weather forecast with specification based on user input, using a third party API
   

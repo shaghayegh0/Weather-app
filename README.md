@@ -9,6 +9,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - CSS
 
 #Installation:
+  - in src folder
+  - npm instal
   - npm start
   - npm run build
    (check to have node.js)
